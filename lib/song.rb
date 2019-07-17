@@ -42,7 +42,7 @@ class Song
   end
 
   def self.new_from_filename(filename)
-      song_name = filename.split(" - ")[1]
+      song_name = filename.split(" - ")[1].gsup
       artist_name = filename.split(" - ")[0]
       song_name = song_name.split(".")[0]
       song = Song.new
