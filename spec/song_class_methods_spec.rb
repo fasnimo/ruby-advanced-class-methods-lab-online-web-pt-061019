@@ -76,7 +76,7 @@ describe "Song Class Methods" do
   end
 
   describe '.artist_alpha' do
-    it 'returns all the song instances in alphabetical order by song name' do
+    it 'returns all the song name instances in alphabetical order by song name' do
       song_1 = Song.create_from_filename("Thundercat - For Love I Come.mp3")
       song_2 = Song.create_from_filename("House - CAT")
       song_3 = Song.create_from_filename("JPSON - Call ME")
