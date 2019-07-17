@@ -75,13 +75,13 @@ describe "Song Class Methods" do
     end
   end
 
-  describe '.artist_alph' do
+  describe '.artist_alpha' do
     it 'returns all the song instances in alphabetical order by song name' do
       song_1 = Song.create_from_filename("Thundercat - For Love I Come.mp3")
       song_2 = Song.create_from_filename("House - CAT")
       song_3 = Song.create_from_filename("JPSON - Call ME")
 
-      expect(Song.artist_alph).to eq([song_2, song_3, song_1])
+      expect(Song.artist_alpha).to eq([song_2, song_3, song_1])
     end
   end
 
